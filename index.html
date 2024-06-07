@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康相談チャットアプリ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>健康相談</h1>
+    <!-- コンテンツ表示画面 -->
+    <div>
+        <!-- 各場所にidを設定しましょう -->
+        <div>
+            <input type="text" id="uname" placeholder="名前を入力してください">
+        </div>
+        <div>
+            <h2>身体の症状を選択してください</h2>
+            <label><input type="checkbox" name="symptom" value="頭痛"> 頭痛</label>
+            <label><input type="checkbox" name="symptom" value="発熱"> 発熱</label>
+            <label><input type="checkbox" name="symptom" value="咳"> 咳</label>
+            <label><input type="checkbox" name="symptom" value="吐き気/嘔吐"> 吐き気/嘔吐</label>
+            <label><input type="checkbox" name="symptom" value="その他身体症状"> その他身体症状</label>
+            <label><input type="checkbox" name="symptom" value="その他精神症状"> その他精神症状</label>
+            <!-- 他の症状も追加可能 -->
+        </div>
+        <div>
+            <label for="free-text">具体的な症状:</label>
+            <textarea id="free-text" placeholder="文章を入力してください"></textarea>
+        </div>
+        <button id="send">送信</button>
+        <!-- style.cssに "overflow: auto;"を書いてみましょう！※最後に -->
+        <div id="output" style="overflow: auto;"></div>
+    </div>
+
+    <script src="js/jquery-2.1.3.min.js"> </script>
+    <script type="module" src="js/script2.js"></script>
+
+</body>
+</html>
